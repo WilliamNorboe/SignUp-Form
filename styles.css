@@ -58,15 +58,23 @@ input{
     border-color: #E5E7EB;
 }
 
-input[type=text]:focus, input[type=email]:focus{
+input:focus{
     outline-color: skyblue;
-    box-shadow: 5px 5px 5px;
+    box-shadow: 2px 2px 2px;
 }
+
 .formBox{
     background-color: white;
     padding-left: 30px;
     padding-bottom: 20px;
     width: 100%;
+    box-shadow: 2px 2px 2px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .inputBox{
     display: flex;
@@ -78,11 +86,19 @@ input[type=text]:focus, input[type=email]:focus{
     display: flex;
     gap: 40px;
 }
+
+.error{
+    color: red;
+    display: hidden;
+    font-size: 13px;
+    height: 13px;
+}
 .generalText{
     color: black;
     margin-left: 30px;
     font-size: 24px;
     font-weight: bold;
+    width: 80%;
 }
 
 .formText{
@@ -95,6 +111,7 @@ input[type=text]:focus, input[type=email]:focus{
     font-weight: bold;
     letter-spacing: .1rem;
 }
+
 #createAccountButton{
     background-color: #596D48;
     width: 200px;
